@@ -1,3 +1,69 @@
-h1{
-    color:red;
+@font-face {
+    font-family: "Norse";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+html {
+    background-color: black;
+}
+
+.left-splash {
+    position:absolute;
+    height: 100vh;
+    width: 34vw;
+    background-image: url(images/splash.jpg);
+    background-size: contain;
+}
+.main-container {
+    display:inline-block;
+    background-color: blanchedalmond;
+    height: 100vh;
+    width: 66vw;
+}
+
+.logo-container {
+    display:flex;
+    position: relative;
+    top: 30%;
+
+    /* background-color: rgba(0,0,0,.05); */
+    background-color: rgba(255,255,255,.35);
+    /* width: 100%; */
+    height: 14%;
+
+    
+    & h1 {
+        text-align: center;
+        color: rgb(234, 234, 234);
+        font-family: "Norse";
+        font-size: 68px;
+        margin: 0;
+        width: auto;
+    }
+
+}
+
+.odin-logo {
+    position: relative;
+    left: 30%;
+    /* padding-top: 5px; */
+
+    background-image: url(images/odin-logo.png);
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.photo-credit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8em;
+    position:absolute;
+    bottom: .5%;
+    right: 50%;
+    /* text-align: center; */
+    color: white;
+
+    & a {
+        text-decoration-thickness: .5px;
+        color:white;
+    }
 }
