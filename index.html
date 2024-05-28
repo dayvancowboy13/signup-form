@@ -9,11 +9,59 @@
 <body>
     <div class="left-splash">
         <div class="logo-container">
-            <div class="odin-logo"></div>
+            <img src="images/odin-logo.png" class="odin-logo">
+            <!-- <div class="odin-logo"></div> -->
             <h1>ODIN</h1>
         </div>
         <div class="photo-credit">Photo by <a href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Priscilla Du Preez 🇨🇦</a> on <a href="https://unsplash.com/photos/photo-of-boston-fern-6gWMviz-vSo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
     </div>
-    <!-- <div class="main-container"></div> -->
+    <div class="main-container">
+        <div class="call-out-box">
+            <h3>This is not a real online service! You know you need
+                something like this in your life to help you realize
+                your deepest dreams. <br>Sign up <em>now</em> to get started.
+            </h3>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form class="input-form" action="https://httpbin.org/post" method="post">
+            <legend>Let's Tango!</legend>
+            <div class="two-labels">
+                <div class="label-input">
+                    <label for="first_name">FIRST NAME</label><br>
+                    <input autofocus type="text" minlength="3" maxlength="20" name="first_name" required>
+                </div>
+                <div class="label-input">
+                    <label for="last_name">LAST NAME</label><br>
+                    <input type="text" minlength="3" maxlength="20" name="last_name" required>
+                </div>
+            </div>
+            <br>
+            <div class="two-labels">
+                <div class="label-input">
+                    <label for="email">E-MAIL</label><br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="label-input">
+                    <label>PHONE NUMBER</label><br>
+                    <input type="tel" name="phone_number">
+                </div>
+            </div>
+            <br>
+            <div class="two-labels">
+                <div class="label-input">
+                    <label>PASSWORD</label><br>
+                    <input type="password" required minlength="8" maxlength="32">
+                </div>
+                <div class="label-input">
+                    <label>CONFIRM PASSWORD</label><br>
+                    <input type="password" required minlength="8" maxlength="32">
+                </div>
+            </div>
+                <br>
+            <button type="submit" class="create-account">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </form>
+
+    </div>
 </body>
 </html>
